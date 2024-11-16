@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="style.css" />
-  <title>Storm Remnant</title>
+  <title>Storm Remnants</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -54,7 +54,7 @@
 
 <body>
     <nav>
-        <div class="nav1">
+        <div class="nav1" id="top">
             <ul>
                 <li><img src="UYULogo.png" class="UYULogo"></li>
                 <li><a href="https://yuzhou1655.github.io/Home/" class="Button">Home</a></li>
@@ -62,7 +62,7 @@
                     <a class="Button">Game Designs</a>
                     <div class="dropdown-content">
                         <a href="https://yuzhou1655.github.io/TimelyShot/">Timely Shot</a>
-                        <a href="https://yuzhou1655.github.io/StormRemnant/">Storm Remnant</a>
+                        <a href="https://yuzhou1655.github.io/StormRemnant/">Storm Remnants</a>
                         <a href="https://yuzhou1655.github.io/BeforeTheRainstormZY/">Before the Rainstorm</a>
                         <a href="https://yuzhou1655.github.io/DuckrossingZY/">Duckrossing</a>
                     </div>
@@ -85,12 +85,12 @@
     <div class="sidebar">
         <a href="#top">Top</a>
         <a href="#OVW">OVERVIEW</a>
-        <a href="#REF">INSPIRATION & REFERRENCE</a>
-        <a href="#STR">STORY & RULES</a>
-        <a href="#DFT">DRAFT</a>
+        <a href="#STR">STORY</a>
+        <a href="#MCC">MECHANICS</a>
+        <a href="#DFT">LEVEL DRAFT</a>
         <a href="#WBX">WHITE BOX</a>
-        <a href="#FNL">FINAL DELIVERABLE</a>
         <a href="#ITR">ITERATIONS</a>
+        <a href="#FNL">FINAL DELIVERABLE</a>
         <a href="#LTDC">LIGHTING & DECORATION</a>
         <a href="#PM">POST MORTEM</a>
     </div>
@@ -98,14 +98,14 @@
     <section id="Home" class="cover">
 
         <div class="cover-content">
-           
+
 
             <h1 class="cover-title">
-                Storm Remnant
+                Storm Remnants
             </h1>
 
             <h2 class="cover-subtitle">
-               8V8 TDM Leve Design in UEFN
+                Team Deathmatch LeveL Design in UEFN
             </h2>
 
         </div>
@@ -114,56 +114,448 @@
 
     <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a;opacity: 0;">
 
-    <p class="header" id="top"></p>
 
-    <p class="subheader" id="PDF">Project Report File</p>
-    <p class="subsubsubheader">PDF</p>
+    <p class="header" id="OVW">Overview</p>
+
+
     <section class="subcontent">
-        <section class="subcontent">
-            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////</p>
-        </section>
-        <section class="subcontent">
-            <iframe class="PDFV" src="StormRemnant.pdf"></iframe>
-        </section>
-    </section>
 
+        <p class="subcontent">Storm Remnants is a multiplayer competitive map created during a workshop with an associate level designer from Gearbox. In the workshop, we learned how to use the Unreal Engine Fortnite Network (UEFN) and applied level design theories in practice. </p>
 
-    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+        <img class="imgMxl" src="OVW3.png" />
 
-    <p class="subheader" id="VD">Videos</p>
-    <p class="subsubsubheader">Map Walkthrough</p>
-    <section class="subcontent">
-        <section class="subcontent">
-            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////</p>
-        </section>
+        <p class="subcontent">The Borderlands franchise, designed and developed by Gearbox, is my favorite first-person shooter game franchise and it has a history of collaboration with Fortnite. I found and utilized the available the Borderlands assets collection in UFEN to create this map, Storm Remnants, and tell a story set in the world of Borderlands.</p>
+        <p class="subsubsubheader">STORM REMNANTS MAP WALKTHROUGH</p>
         <div style="display: flex; justify-content: center;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/ltC45c2ADwQ?si=NQzB9lshjv1jclN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
-    </section>
 
+
+    </section>
 
     <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
 
-    <p class="subsubsubheader">Loadout Presets</p>
+    <p class="header" id="STR">Story</p>
+    <p class="subheader" id="STR">What happened at Storm Remnants ?</p>
+
     <section class="subcontent">
         <section class="subcontent">
-            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+            <p>
+                The battle between two Sirens sent shockwaves across Pandora, caused massive sandstorms that buried countless structures and creatures beneath the dunes. Decades later, remnants of these ruins slowly began to resurface, revealing <b>
+                    <u>the Holy Broadcast Center, once-glorious stronghold of Children Of the Vault (COV), and the skeletons of giant beast</u><span style="color: darkorange; background-color: black">(①)</span>.
+                </b> When the sun shined on the aged radar, it was reactivated, then transmitted a message claiming that a hidden Vault lies within the ruins of Holy Broadcast Center, waiting for the first to claim it.
+            </p>
+            <p>
+                The COV, fractured into two factions after the death of the Calypso twins long ago, established <b><u>outposts</u><span style="color:yellow; background-color:darkgrey">(②)</span></b>at the entrance of the skull canyon and began fighting over the treasure. However, the arrival of the Vladof forces, with advanced equipment and tactics, overpowered the warring factions, setting up their own <b><u>camp</u><span style="color: lightblue; background-color: black">(③)</span></b>on the outskirts.
+            </p>
+            <p>
+                Soon after, Maliwan and Hyperion the two largest cooperation in the universe, drawn by the radar's signal, arrived simultaneously. Surrounded on both sides of the skull canyon, the Vladof troops were forced to retreat, leaving the battlefield to the upcoming showdown between<b><u>Maliwan and Hyperion</u><span style="color: lightgreen; background-color: black"> (④)</span></b>.
+
+                Players will take on the role as bounty hunters hired by either Maliwan or Hyperion, engaging in intense combat within the Storm Remnants.
+            </p>
+
         </section>
+        <img class="imgMl" src="STR1.PNG" />
+        <section class="subcontent">
+        </section>
+
+        <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    </section>
+    <section class="subcontent">
+
+        <p class="subheader">Characters</p>
+        <p class="subcontent">//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+        <img class="imgM" src="STR2.png" />
+    </section>
+
+
+
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <p class="header" id="MCC">Game Mechanics</p>
+    <p class="subheader">Rules</p>
+    <p class="subsubheader">Team Death Match</p>
+    <section class="subcontent">
+        <section class="subcontent">
+            <p>
+                •	Both teams need to achieve a certain number of eliminations to secure victory.
+            </p>
+            <p>
+                •	Players spawn at fixed locations and must wait 3 seconds after being eliminated to respawn.
+            </p>
+            <p>
+                •	Six different loadout presets are available in the respawn room, and players can switch their loadout at any time by picking up new loadout.
+            </p>
+            <p>
+                •	Each team can only have up to two players using the same loadout presets simultaneously.
+            </p>
+        </section>
+    </section>
+
+    <p class="subsubheader" id="VD">Players</p>
+    <section class="subcontent">
+        <section class="subcontent">
+            <p>
+                •	Players can hurdle over certain covers but cannot climb walls.s
+            </p>
+            <p>
+                •	A player’s health, shield, movement speed, and energy consumption will vary depending on the chosen loadout preset.
+            </p>
+            <p>
+                •	When a player’s health and shield reach 0, they will be instantly eliminated without entering a “downed but not died” state, but they can always respawn.
+            </p>
+            <p>
+                •	Equipment will not drop upon a player`s elimination
+            </p>
+            <p>
+                •	Players have unlimited backup ammunition, but items and certain equipment can only be obtained from pickups on the map or by respawning and picking up a new loadout preset.
+            </p>
+        </section>
+    </section>
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+
+    <p class="subsubheader">LOADOUT PRESETS</p>
+    <section class="subcontent">
+        <section class="subcontent">
+            <p>
+                <b>•	Assassin.</b>   Low health and shield but high movement speed. Eqquipped a sniper rifle that can eliminate most enemies with one bullet in the head; a secondary weapon can be handy with enough practive; and a shadow bomb to escape from danger or move to highground.
+            </p>
+            <p>
+                <b>•	Siren.</b> A team player with high health and low shield. Both weapons can deal a good amount of damage while force the enemies to displace closer or farther. Plus 2 cans of healing spray, Siren is the backbone of the team both offensive and defensive.
+            </p>
+            <p>
+                <b>•	Gunserker.</b>Heavily armed big guy with heavy weapons causing blast in the battleground. Though the grenade launcher and shotgun are scary, slow movement and fire rate might drag you down.
+            </p>
+            <p>
+                <b>•	Psycho.</b>Fast movement speed with no shield and health only. Restore health when eliminate enmies. The EMP grenades help break enemies` shields fast, and the hammer are easy to lock on enemies when they are close and the chainsaw launcher can help to block their paths.
+            </p>
+            <p>
+                <b>•	Operative.</b>With an almost bullet proof shield with pistol equipped, 2 deployable bubble shields and a healing spray, Operatives can provide protection and solid support for injured teammates.
+            </p>
+            <p>
+                <b>•	Mechanician.</b> Though Mechanician holds the most handy submachine gun, those turrets and approximity mines make big difference in combat. Traps and distraction that might be lethal if enemies don`t pay enough attention.
+            </p>
+        </section>
+    </section>
+
+
+
+
+    <section>
         <div style="display: flex; justify-content: center;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/xHtE1BcMpiw?si=UBTn8aQeAhserFx2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+        <p class="imgNote">Order of appearence: Assassin | Siren | Gunserker | Psycho | Operative | Mechanician</p>
+    </section>
+
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <p class="header" id="DFT">LEVEL draft</p>
+    <section class="subcontent">
+        <p class="subsubsubheader">Floor Plan Legends</p>
+        <img class="imgMl" src="DFT1.png" />
+        <hr style="margin-bottom:4%;opacity:0%">
+
+        <p class="subsubsubheader">Floor Plan</p>
+        <img class="imgMl" src="DFT2.png" />
+        <hr style="margin-bottom:4%;opacity:0%">
+
+        <p class="subsubsubheader">Area Ditributions</p>
+        <img class="imgMl" src="DFT4.png" />
+        <hr style="margin-bottom:4%;opacity:0%">
+
+        <p class="subsubsubheader">Player Routes</p>
+        <img class="imgMl" src="DFT5.png" />
+        <hr style="margin-bottom:4%;opacity:0%">
+
+        <p class="subsubsubheader">Main Locations</p>
+        <img class="imgMl" src="DFT3.png" />
+
+        <section class="content">
+            <p>
+                <b>①</b> Spawn Room |
+
+                <b>   ②</b> Children of the Vault(COV) Outposts |
+
+                <b>   ③</b> Cliff Ground (part of COV Outposts) |
+
+                <b>   ④</b> Vladof Building |
+
+                <b>   ⑤</b> Skull
+            </p>
+        </section>
+
+        <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+
+        <section class="subcontent">
+            <p class="subsubsubheader">Feedback</p>
+            <p>
+                ①	The actual heights of areas are not clearly indicated, hard to tell from just top down
+            </p>
+            <p>
+                ②	The ratio of map needs further adjustment.
+            </p>
+
+        </section>
     </section>
 
     <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
-
-    <p class="subsubsubheader">Combat With AI</p>
+    <p class="header" id="WBX">Level White Box</p>
     <section class="subcontent">
         <section class="subcontent">
-            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+            <p class="subsubsubheader">Changes made in Version White Box</p>
+            <p>
+                •	Redesign the Upper part of COV Outpost area for more intensive and engaging combat.
+            </p>
+            <p>
+                •	Adjust the ratio of Map
+            </p>
+            <p>
+                •	Add Movement pad and jump pad to speed up the respawning process which slowed by new map ratio.
+            </p>
         </section>
+
+        <p class="subsubsubheader">White Box Top-down View</p>
+        <img class="imgMl" src="WBX1.png" />
+        <hr style="margin-bottom:4%;opacity:0%">
+
+        <p class="subsubsubheader">Main Locations</p>
+        <img class="imgMl" src="WBX2.png" />
+        <section class="content">
+            <p>
+                <b>①</b> Spawn Room |
+
+                <b>   ②</b> Children of the Vault(COV) Outposts |
+
+                <b>   ③</b> Cliff Ground (part of COV Outposts) |
+
+                <b>   ④</b> Vladof Building |
+
+                <b>   ⑤</b> Skull
+            </p>
+        </section>
+
+        <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+
+        <section class="subcontent">
+            <p class="subsubsubheader">Feedback</p>
+            <p>
+                ①	Items are placed evenly across the map but most locations are very safe.
+            </p>
+            <p>
+                ②	There should be space at the 1F of Skull
+            </p>
+            <p>
+                ③	Reconsider the design of COV Outpost for more defensive option
+            </p>
+
+        </section>
+    </section>
+
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <p class="header" id="ITR">Iterations</p>
+    <section class="subcontent">
+        <section class="subcontent">
+            <p class="subsubheader">V.White Box to V.O.0</p>
+            <p class="subsubsubheader">Changes made in Version O.0</p>
+            <p>
+                •Relocate most item spawners to combat area while some remains at safe place.
+            </p>
+            <p>
+                •Redesign the 1F of Skull: New 1F of Skull provide better sight and open to surrounding areas
+
+            </p>
+            <p>
+                •Redesign The COV Outpost: A not vary high 2F with covers and windows to shoot from.
+
+            </p>
+            <p>
+                •Connection Between Skull and Cliff Ground: Provide additional route to Skull 2F
+
+
+            </p>
+            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+
+            <p class="subsubsubheader">Observations and Feedbacks from V.0 Playtesting:</p>
+            <p>
+                ①	There should be Blocks to prevent spawn kills
+            </p>
+            <p>
+                ②	Some areas are way too exposed to several lines of fire at the same time.
+            </p>
+        </section>
+    </section>
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <section class="subcontent">
+        <section class="subcontent">
+            <p class="subsubheader">V.O.0 to V.1.0</p>
+            <p class="subsubsubheader">Changes made in Version 1.0</p>
+            <p>
+                •Large Blocks are placed between COV Outposts and Spawn Room; some covers facing Spawn Room are redesigned for same purpose.
+                o	The cover on the giant teeth, relocate the WELCOM Board, a container added to COV Outpost. All blocking fire shoot directly to spawn room from combat area.
+
+            </p>
+            <p>
+                ••	Changes made to Vladof Building 3F and Skull 1F
+                o	Vladof Building 3F is now connected to the top of the skull, it servers as a flank area.
+                o	Large covers are added to Skull 1F, on the one hand providing cover, providing separation between areas, on the other hand supporting the Giant Skull.
+
+
+            </p>
+            <p>
+                •Redesign The COV Outpost: A not vary high 2F with covers and windows to shoot from.
+
+            </p>
+            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+
+            <p class="subsubsubheader">Observations and Feedbacks from V.1.0 Playtesting:</p>
+            <p>
+                ①	The connections between areas are not obvious or lack of options.
+            </p>
+            <p>
+                ②	It is almost impossible to flank.
+            </p>
+        </section>
+    </section>
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <section class="subcontent">
+        <section class="subcontent">
+            <p class="subsubheader">V.1.0 to V.2.0</p>
+            <p class="subsubsubheader">Changes made in Version 2.0</p>
+            <p>
+                ••	Add signs and change time of day from noon to night for better lighting work.
+                o	Arrow signs indicate a way up or forward
+                o	Red and white striped barricades indicate the border of map, meaning “ no access”
+                o	A combination of boards looks like a hand and arm, finger pointing at a direction.
+
+
+            </p>
+            <p>
+                ••	Changes made to COV Outpost 1F,2F and 3F:
+                o	A secret path is added to 1F of COV Outpost for flank;
+                o	Add another way up to Cliff Ground from COV Outpost 1F;
+                o	Add bouncer and object for easier access to 2F;
+                o	3F now connects with Cliff Ground 2f.
+
+
+
+            </p>
+            <p>
+                •Redesign The COV Outpost: A not vary high 2F with covers and windows to shoot from.
+
+            </p>
+            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+
+            <p class="subsubsubheader">Observations and Feedbacks from V.2.0 Playtesting:</p>
+            <p>
+                ①	Platform on Cliff Ground is hard to reach and harder to survive.
+            </p>
+            <p>
+                ②	The utilization rate of 1F and 2F of Vladof Building is low.
+            </p>
+            <p>
+                ③	The design of Spawn Room is visually connected to Loadout Presets but could be clearer.
+            </p>
+        </section>
+    </section>
+
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <section class="subcontent">
+        <section class="subcontent">
+            <p class="subsubheader">V.2.0 to V.3.0(Final)</p>
+            <p class="subsubsubheader">Changes made in Version 3.0</p>
+            <p>
+                ••	•	Rework on Cliff Ground: Larger platform to stand, easier access, safer.
+
+
+            </p>
+            <p>
+                ••	•	Rework of Vladof Building 1F 2F, add door and windows as partial block, add stairs connect to 3F of Vladof Building. Now mainly serves as a flank area of 3F and to COV Outpost.
+
+
+
+            </p>
+            <p>
+                •	Optimize the visual elements of spawn room and outskirt areas.
+
+            </p>
+            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+        </section>
+    </section>
+
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <p class="header" id="FNL">Final Deliverable</p>
+    <section class="subcontent">
+        <section class="subcontent">
+            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+        </section>
+    </section>
+
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <p class="header" id="LTDC">Lighting and decoration</p>
+    <p class="subheader">Light Maps</p>
+    <p class="subsubsubheader">Overall Map Lighting</p>
+    <img class="imgMl" src="LT1.png" />
+
+    <p class="subsubsubheader">Skull   |    Vladof Building</p>
+
+    <section class="subcontent">
+        <section class="subcontent">
+            <div class="imgRow2">
+                <div class="imgColumn2">
+                    <img src="LT2.png" style="width:30vw">
+                </div>
+                <div class="imgColumn2">
+                    <img src="LT3.png" style="width: 30vw">
+                </div>
+            </div>
+
+            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+        </section>
+    </section>
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <p class="subheader">Detailed Lighting and Decorations</p>
+    <section class="subcontent">
+        <section class="subcontent">
+
+            <p> ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////</p>
+        </section>
+    </section>
+
+
+
+    <hr style="margin-top:1%;margin-bottom:1%;margin-left:auto;margin-right:auto;width:50%;height:2px;color:#463f3a">
+    <section class="subcontent" id="PM">
+        <p class="header">Post Mortem</p>
+        <section class="subcontent">
+            <p>
+                The post-apocalyptic art style of Borderlands feels like creating order and seeking harmony out of chaos, which makes the design of aesthetics both challenging and rewarding. I believe there is still plenty of room for improvements in terms of art, architecture, and environmental design.
+            </p>
+
+            <p>
+                During the process of establishing this map, I encountered several constraints within the editor, such as limitations on placing floors and walls, and restrictions on customizing the specific value for weapons and items. In these cases, I had to adapt to these constraints and modify parts of the design accordingly.
+            </p>
+            <p>
+                In terms of levels and map, my experience lies mostly in first-person shooters (FPS). While some design principles could be transferred to third-person shooters (TPS), there are still many differences that required adjustments during testing and iteration after the initial design phase. One thing I realized during the process was that one key difference between FPS and TPS is: TPS involve an additional step of safely observing from behind cover before identifying the target and then shooting.
+            </p>
+            <p>
+                Special thanks to my friends who participated in playtesting, it is so complicated to test the map in a region that is not supported by the Epic Creator Program but we did it!
+            </p>
+        </section>
+    </section>
+    <section>
         <div style="display: flex; justify-content: center;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/qOi4ZZP6cM4?si=59WlDy6vEUBKjkIo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
+        <p class="imgNote"> Due to restriction of holding an official playtest, here is the combat with AI in different loadouts and at different locations in map.</p>
     </section>
 
 
